@@ -5,27 +5,27 @@
 
 # How to use
 
-- /mine [GET]
+- `/mine` [GET]
     - 打包一個區塊
-- /transactions/new [POST]
+- `/transactions/new` [POST]
     - 建立新交易
         - sender
         - recipient
         - amount
-- /get_chain    [GET]
+- `/get_chain`    [GET]
     - 查看區塊鏈
-- /nodes/register   [POST]
+- `/nodes/register`   [POST]
     - 註冊一個新的節點
-- /nodes/resolve [GET]
+- `/nodes/resolve` [GET]
     - 如果找到一個有效的鏈，其長度大於主鏈，則進行替換
 
 
 
 # demo流程
 
-- 用一台電腦開啟程式,port 預設 `5003`，當成主鏈
+- 用一台電腦開啟程式，port 預設 `5003`，當成主鏈
     - `python main.py`
-- 在另一台電腦或是再開一個終端機，port 換成另一個，當成測試鏈
+- 在另一台電腦或是再開一個終端機，port 換成另一個，如 `5004`，當成新節點
     - `python main.py --port 5004`
 - 先註冊新節點
     - ![](img/2023-04-06-11-53-06.png)
